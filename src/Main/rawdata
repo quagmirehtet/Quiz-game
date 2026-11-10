@@ -1,0 +1,328 @@
+========================================
+       WELCOME TO THE TRIVIA QUIZ!
+========================================
+Choose a category:
+1. Science & Tech
+2. Geography
+3. Pop Culture
+
+Enter your choice (1-3): 1
+
+----------------------------------------
+Question 1 of 3 (Difficulty: Medium)
+What is the chemical symbol for Gold?
+
+  A) Ag
+  B) Au
+  C) Gd
+  D) Go
+
+Your answer (A/B/C/D): B
+--> Correct!
+
+----------------------------------------
+Question 2 of 3 (Difficulty: Medium)
+Which planet is the closest to the Sun?
+
+  A) Venus
+  B) Earth
+  C) Mercury
+  D) Mars
+
+Your answer (A/B/C/D): A
+--> Wrong! The correct answer is C) Mercury.
+
+----------------------------------------
+Question 3 of 3 (Difficulty: Medium)
+Who developed the theory of general relativity?
+
+  A) Isaac Newton
+  B) Nikola Tesla
+  C) Albert Einstein
+  D) Galileo Galilei
+
+Your answer (A/B/C/D): C
+--> Correct!
+
+========================================
+             QUIZ COMPLETE!
+========================================
+Total Questions: 3
+Score: 2 out of 3
+Percentage: 67%
+Rating: Good Job!
+========================================
+Thanks for playing!
+
+do {
+			
+//			int totalQuestionCount=0;
+			
+			if(choiceNum==1) {
+
+			System.out.println("Question 1 of 3 (Difficulty: Easy)");
+			System.out.println(
+					"What is the chemical symbol for  Gold? \n" + "A) Ag \n" + "B) Au \n" + "C) Gd \n" + "D) Go ");
+
+			System.out.println("Your answer (A/B/C/D): ");
+			String ans = scanner.nextLine();
+
+			if (ans.equals("B")) {
+
+				System.out.println("--> Correct!");
+
+			} else {
+
+				System.out.println("-->Wrong! The correct answr is B) Au");
+
+			}
+
+			System.out.println("-------------------------------------------------------");
+
+			System.out.println("Question 2 of 3 (Difficulty: Medium)");
+			System.out.println("Which planet is the closet to the Sun? \n" + "A) Venus \n" + "B) Earth \n "
+					+ "C) Mercury \n" + "D) Mars");
+
+			System.out.println("Your answer (A/B/C/D) :");
+			String ans2 = scanner.nextLine();
+
+			if (ans2.equals("C")) {
+
+				System.out.println("-->Correct!");
+
+			} else {
+
+				System.out.println("--> Wrong! The correct answer is C) Mercury.");
+
+			}
+
+			System.out.println("----------------------------------------------------------------------------");
+
+			System.out.println("Question 3 of 3 (Difficulty: Hard )");
+			System.out.println("Who developed the theory of general relativity? \n" + "A) Isaac Newton \n"
+					+ "B) Nikola Tesla \n" + "C) Albert Einstein \n" + "C) Galileo Galilei ");
+
+			System.out.println("Your answer is (A/B/C/D) : ");
+			String ans3 = scanner.nextLine();
+
+			if (ans3.equals("C")) {
+
+				System.out.println("--> Correct!");
+
+			} else {
+				
+				System.out.println("--> Wrong! The correct answer is C) Albert Einstein");
+
+			}
+			
+			}else if(choiceNum==2) {
+				
+				
+				
+			}
+			
+			loopCount++;
+			
+			//totalQuestionCount++;
+			
+			
+
+		}while(loopCount < 3);
+		
+		
+	if excellent  100 %
+	else if  good job 67 %
+	else if  nice try 33%
+	else try again  0 %
+	
+	Which ocean is the largest on Earth by both surface area and volume?
+A. Pacific Ocean
+B. Atlantic Ocean
+C. Indian Ocean
+D. Arctic Ocean
+Incorrect. The Arctic Ocean is the smallest and shallowest of the world's five major oceans.
+
+Show hint
+		This epic historical drama about the "father of the atomic bomb" swept the major categories at the 2024 Academy Awards.
+		
+		3.
+What is the longest continental mountain range in the world?
+A. The Himalayas
+B. The Rocky Mountains
+C. The Andes
+D. The Alps
+
+double result3 = calcuPercentage(score3, 3);
+
+			System.out.println("======================");
+
+			System.out.println("QUIZ COMPLETE!");
+
+			System.out.println("======================");
+
+			System.out.println("Total Question: " + questions3.length);
+
+			System.out.println("Score: " + score3 + " out of " + questions3.length);
+
+			System.out.printf("Percentage : %.0f%%\n", result3);
+
+			System.out.println("Rating :" + gradeResult(result3));
+
+			System.out.println("======================");
+
+			System.out.println("Thanks for playing!");
+
+if (choiceNum == 1) {
+
+			int score = 0;
+
+			for (int i = 0; i < questions.length; i++) {
+
+				System.out.println(
+						"Question " + (i + 1) + " of " + questions.length + " (Difficulty :" + difficulty[i] + " )");
+
+				System.out.println(questions[i]);
+
+				System.out.println("Your answer is (A/B/C/D) : ");
+
+				String ans = scanner.nextLine().trim().toUpperCase();
+
+				if (ans.equals(answers[i])) {
+
+					System.out.println("--> Correct!");
+
+					score++;
+
+				} else {
+
+					System.out.println("--> Wrong! The correct answer is :" + answers[i]);
+
+				}
+
+				System.out.println("--------------------------------------------------------------");
+
+			}
+
+			
+
+		if (choiceNum == 2) {
+
+			int score2 = 0;
+
+			System.out.println("--------------------------------------------------------------");
+
+			for (int i = 0; i < questions2.length; i++) {
+
+				System.out.println(
+						"Question " + (i + 1) + " of " + questions2.length + " (Difficulty :" + difficulty2[i] + " )");
+
+				System.out.println(questions2[i]);
+
+				System.out.println("Your answer is (A/B/C/D) : ");
+
+				String ans2 = scanner.nextLine().trim().toUpperCase();
+
+				if (ans2.equals(answers2[i])) {
+
+					System.out.println("--> Correct!");
+
+					score2++;
+
+				} else {
+
+					System.out.println("--> Wrong! The correct answer is :" + answers2[i]);
+
+				}
+
+				System.out.println("--------------------------------------------------------------");
+
+			}
+
+			double result2 = calcuPercentage(score2, 3);
+
+			System.out.println("======================");
+
+			System.out.println("QUIZ COMPLETE!");
+
+			System.out.println("======================");
+
+			System.out.println("Total Question: " + questions2.length);
+
+			System.out.println("Score: " + score2 + " out of " + questions2.length);
+
+			System.out.printf("Percentage : %.0f%%\n", result2);
+
+			System.out.println("Rating :" + gradeResult(result2));
+
+			System.out.println("======================");
+
+			System.out.println("Thanks for playing!");
+
+		}
+
+		if (choiceNum == 3) {
+
+			int score3 = 0;
+
+			System.out.println("--------------------------------------------------------------");
+
+			for (int i = 0; i < questions3.length; i++) {
+
+				System.out.println(
+						"Question " + (i + 1) + " of " + questions3.length + " (Difficulty :" + difficulty3[i] + " )");
+
+				System.out.println(questions3[i]);
+
+				System.out.println("Your answer is (A/B/C/D) : ");
+
+				String ans2 = scanner.nextLine().trim().toUpperCase();
+
+				if (ans2.equals(answers3[i])) {
+
+					System.out.println("--> Correct!");
+
+					score3++;
+
+				} else {
+
+					System.out.println("--> Wrong! The correct answer is :" + answers3[i]);
+
+				}
+
+				System.out.println("--------------------------------------------------------------");
+
+			}
+			
+			String[] questions = { "What is the chemical symbol for Gold?\nA) Ag\nB) Au\nC) Gd\nD) Go",
+				"Which planet is the closest to the Sun?\nA) Venus\nB) Earth\nC) Mercury\nD) Mars",
+				"Who developed the theory of general relativity?\nA) Isaac Newton\nB) Nikola Tesla\nC) Albert Einstein\nD) Galileo Galilei" };
+
+		String[] answers = { "B", "C", "C" };
+		String[] difficulty = { "Easy", "Medium", "Hard" };
+
+		String[] questions2 = {
+				"1. Which ocean is the largest on Earth by both surface area and volume?\nA) Pacific Ocean\nB) Atlantic Ocean \nC) Indian Ocean \nD) Arctic Ocean",
+				"2. What is the official capital city of Australia?\r\n" + "A. Sydney\r\n" + "B. Melbourne\r\n"
+						+ "C. Canberra\r\n" + "D. Brisbane\r\n",
+				"3. What is the longest continental mountain range in the world?\r\n" + "A. The Himalayas\r\n"
+						+ "B. The Andes\r\n" + "C. The Rocky Mountains\r\n" + "D. The Alps\r\n" };
+
+		String[] answers2 = { "A", "C", "B" };
+		String[] difficulty2 = { "Easy", "Medium", "Hard" };
+
+		String[] questions3 = {
+				"1. Which film won the Academy Award for Best Picture at the 96th Academy Awards in March 2024?\r\n"
+						+ "A. Barbie\r\n" + "B. Poor Things\r\n" + "C. Oppenheimer\r\n"
+						+ "D. Killers of the Flower Moon",
+				"2. In Disney’s animated blockbuster Zootopia 2, police officers Judy Hopps and Nick Wilde go undercover to track down which slippery new reptile species causing chaos in the city?\r\n"
+						+ "A. Chameleons\r\n" + "B. Geckos\r\n" + "C. Komodo dragons\r\n" + "D. Snakes",
+				"3. At the Grammy Awards, which superstar made history by winning Album of the Year for her country-exploration album Cowboy Carter?\r\n"
+						+ "A. Taylor Swift\r\n" + "B. Beyoncé\r\n" + "C. Kacey Musgraves\r\n" + "D. Chappell Roan" };
+
+		String[] answers3 = { "C", "D", "B" };
+		String[] difficulty3 = { "Easy", "Medium", "Hard" };
+
+		
+			
+
+
